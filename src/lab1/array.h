@@ -1,9 +1,9 @@
 typedef struct {
-    int *arr;
+    int *start;
     int size;
-} DynamicArray;
+} Array;
 
-void initDynamicArray(DynamicArray *array, int initialSize);
-int getDynamicArray(DynamicArray *array, int index);
-void setDynamicArray(DynamicArray *array, int index, int value);
-void clearDynamicArray(DynamicArray *array);
+Array *initArray(int size);
+void setItem(Array *arr, int ind, int val);
+int getItem(Array *arr, int ind);
+void clearData(Array *arr);

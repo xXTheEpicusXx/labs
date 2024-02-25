@@ -2,34 +2,29 @@
 #include <stdlib.h>
 #include "array.h"
 
-// Инициализация динамического массива
-void initDynamicArray(DynamicArray *array, int initialSize) {
-    array->arr = (int *)malloc(initialSize * sizeof(int));
-    array->size = initialSize;
+Array *initArray(int size) {
+    Array *arr = (Array *) malloc(sizeof(Array));
+    arr->size = size;
+    arr->start = 0;
+    arr->start = (int *)malloc(arr->size * sizeof(int));
+    return arr;
 }
-
-// Получение элемента по индексу
-int getDynamicArray(DynamicArray *array, int index) {
-    if (index < array->size && index >= 0) {
-        return array->arr[index];
+void setItem(Array *arr, int ind, int val) {
+    if (ind < arr->size || ind < 0) {
+        *(arr->start + ind) = val;
     } else {
-        printf("Ошибка: неверный индекс\n");
-        return -1; // Возвращаем значение по умолчанию в случае ошибки
-    }
+        printf("Index out of bounds exception\n");
+    }      
 }
-
-// Установка значения элемента по индексу
-void setDynamicArray(DynamicArray *array, int index, int value) {
-    if (index < array->size && index >= 0) {
-        array->arr[index] = value;
+int getItem(Array *arr, int ind) {
+    if (ind < arr->size || ind < 0) {
+        return *(arr->start + ind);
     } else {
-        printf("Ошибка: неверный индекс\n");
-    }
+        printf("Index out of bounds exception\n");
+        return -1;
+    }      
 }
-
-// Очистка динамического массива
-void clearDynamicArray(DynamicArray *array) {
-    free(array->arr);
-    array->arr = NULL;
-    array->size = 0;
+void clearData(Array *arr) {
+    free(arr->start);
+    free(arr);
 }

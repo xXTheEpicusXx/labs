@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "comlete_binary_tree.h"
+#include "array.h"
 
 int main(int argc, char *argv[]) {
     return 0;

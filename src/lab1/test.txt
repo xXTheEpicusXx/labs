@@ -1,0 +1,47 @@
+array size 5 items 1 2 3 4 5 get 6
+singlist size 5 items 1 2 3 4 5 get 6
+doublist size 5 items 1 2 3 4 5 get 6
+stack size 5 items 1 2 3 4 5 get 6
+queue size 5 items 1 2 3 4 5 get 6
+hash size 5 items 1 1 1 2 11 5 get 6
+compbintree size 5 items 1 2 3 4 5 get 6
+
+array size 0 items 0 get 1
+singlist size 0 items 0 get 1
+doublist size 0 items 0 get 1
+stack size 0 items 0 get 1
+queue size 0 items 0 get 1
+hash size 0 items 0 get 1
+compbintree size items 0 0 get 1
+
+array size 0 items 0 rm 1
+singlist size 0 items 0 rm 1
+doublist size 0 items 0 rm 1
+stack size 0 items 0 rm 1
+queue size 0 items 0 rm 1
+hash size 0 items 0 rm 1
+compbintree size items 0 0 rm 1
+
+array size 5 items 1 2 3 4 5 get 2
+singlist size 5 items 1 2 3 4 5 get 2
+doublist size 5 items 1 2 3 4 5 get 2
+stack size 5 items 1 2 3 4 5 get 2
+queue size 5 items 1 2 3 4 5 get 2
+hash size 5 items 1 2 3 4 5 get 2
+compbintree size 5 items 1 2 3 4 5 get 2
+
+array size 5 items 1 2 3 4 5 get 5
+singlist size 5 items 1 2 3 4 5 get 5
+doublist size 5 items 1 2 3 4 5 get 5
+stack size 5 items 1 2 3 4 5 get 5
+queue size 5 items 1 2 3 4 5 get 5
+hash size 5 items 1 2 3 4 5 get 5
+compbintree size 5 items 1 2 3 4 5 get 5
+
+array size 5 items 1 2 3 4 5 get 5
+singlist size 5 items 1 2 3 4 5 get 5
+doublist size 5 items 1 2 3 4 5 get 5
+stack size 5 items 1 2 3 4 5 get 5
+queue size 5 items 1 2 3 4 5 get 5
+hash size 5 items 1 2 3 4 5 get 5
+compbintree size 5 items 1 2 3 4 5 get 5
